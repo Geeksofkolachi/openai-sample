@@ -1,0 +1,16 @@
+{
+  "name": "chat_gpt",
+  "version": "0.0.1",
+  "description": "\"this is a node.js apis integrated with open ai apis to write content\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Mustafeen (GEEKS OF KOLACHI)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "openai": "^3.2.1"
+  }
+}
