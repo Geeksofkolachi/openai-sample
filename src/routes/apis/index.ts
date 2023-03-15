@@ -17,7 +17,7 @@ router.post("/", async (req: Request, res: Response) => {
     max_tokens: 1000,
   });
   let data = completion.data.choices[0].text || "";
-  res.status(200).json({ result: data });
+  res.status(200).send(data);
 });
 
-module.exports = router;
+export default router;
