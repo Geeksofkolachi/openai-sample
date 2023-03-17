@@ -2,15 +2,22 @@
   "name": "chat_gpt",
   "version": "0.0.1",
   "description": "\"this is a node.js apis integrated with open ai apis to write content\"",
-  "main": "app.js",
+  "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app"
   },
   "author": "Ahmad Mustafeen (GEEKS OF KOLACHI)",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.21",
     "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.3",
+    "typescript": "^4.9.5"
   }
 }
