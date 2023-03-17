@@ -25,12 +25,6 @@ const messages: {
 
 router.post("/", async (req: Request, res: Response) => {
   const query = req.body.query;
-  //   const completion = await openaiApi.createCompletion({
-  //     model: "text-davinci-003",
-  //     prompt: query,
-  //     temperature: 0.6,
-  //     max_tokens: 1000,
-  //   });
   messages.push({
     role: ChatCompletionRequestMessageRoleEnum.User,
     content: query,
@@ -44,6 +38,20 @@ router.post("/", async (req: Request, res: Response) => {
     });
     let data = completion.data || "";
     res.status(200).send(data?.choices?.[0]?.message?.content || "");
+  } catch (err) {
+    console.log({ err });
+    res.status(502).send("ERROR");
+  }
+});
+
+router.post("/image-generation", async (req: Request, res: Response) => {
+  const query = req.body.query;
+  try {
+    const completion = await openaiApi.createImage({
+      prompt: query,
+    });
+    let data = completion.data || "";
+    res.status(200).send(data.data);
   } catch (err) {
     console.log({ err });
     res.status(502).send("ERROR");
