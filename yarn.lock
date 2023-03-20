@@ -10,12 +10,27 @@
     "@types/connect" "*"
     "@types/node" "*"
 
+"@types/busboy@*":
+  "integrity" "sha512-ncOOhwmyFDW76c/Tuvv9MA9VGYUCn8blzyWmzYELcNGDb0WXWLSmFi7hJq25YdRBYJrmMBB5jZZwUjlJe9HCjQ=="
+  "resolved" "https://registry.npmjs.org/@types/busboy/-/busboy-1.5.0.tgz"
+  "version" "1.5.0"
+  dependencies:
+    "@types/node" "*"
+
 "@types/connect@*":
   "integrity" "sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ=="
   "resolved" "https://registry.npmjs.org/@types/connect/-/connect-3.4.35.tgz"
   "version" "3.4.35"
   dependencies:
     "@types/node" "*"
+
+"@types/express-fileupload@^1.4.1":
+  "integrity" "sha512-sbl865h1Sser6SF+efpw2F/+roGISj+PRIbMcGXbtzgJQCBAeeBmoSo7sPge/mBa22ymCHfFPtHFsag/wUxwfg=="
+  "resolved" "https://registry.npmjs.org/@types/express-fileupload/-/express-fileupload-1.4.1.tgz"
+  "version" "1.4.1"
+  dependencies:
+    "@types/busboy" "*"
+    "@types/express" "*"
 
 "@types/express-serve-static-core@^4.17.33":
   "integrity" "sha512-TPBqmR/HRYI3eC2E5hmiivIzv+bidAfXofM+sbonAGvyDhySGw9/PQZFt2BLOrjUUR++4eJVpx6KnLQK1Fk9tA=="
@@ -26,7 +41,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.17.17":
+"@types/express@*", "@types/express@^4.17.17":
   "integrity" "sha512-Q4FmmuLGBG58btUnfS1c1r/NQdlp3DMfGDGig8WhfpA2YRUtEkxAjkZb0yvplJGYdF1fsQ81iMDcH24sSCNC/Q=="
   "resolved" "https://registry.npmjs.org/@types/express/-/express-4.17.17.tgz"
   "version" "4.17.17"
@@ -35,6 +50,13 @@
     "@types/express-serve-static-core" "^4.17.33"
     "@types/qs" "*"
     "@types/serve-static" "*"
+
+"@types/formidable@^2.0.5":
+  "integrity" "sha512-uvMcdn/KK3maPOaVUAc3HEYbCEhjaGFwww4EsX6IJfWIJ1tzHtDHczuImH3GKdusPnAAmzB07St90uabZeCKPA=="
+  "resolved" "https://registry.npmjs.org/@types/formidable/-/formidable-2.0.5.tgz"
+  "version" "2.0.5"
+  dependencies:
+    "@types/node" "*"
 
 "@types/mime@*":
   "integrity" "sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA=="
@@ -99,6 +121,11 @@
   "integrity" "sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg=="
   "resolved" "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz"
   "version" "1.1.1"
+
+"asap@^2.0.0":
+  "integrity" "sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA=="
+  "resolved" "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz"
+  "version" "2.0.6"
 
 "asn1@~0.2.3":
   "integrity" "sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ=="
@@ -183,6 +210,13 @@
   "version" "3.0.2"
   dependencies:
     "fill-range" "^7.0.1"
+
+"busboy@^1.6.0":
+  "integrity" "sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA=="
+  "resolved" "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz"
+  "version" "1.6.0"
+  dependencies:
+    "streamsearch" "^1.1.0"
 
 "bytes@3.1.2":
   "integrity" "sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg=="
@@ -297,6 +331,14 @@
   "resolved" "https://registry.npmjs.org/destroy/-/destroy-1.2.0.tgz"
   "version" "1.2.0"
 
+"dezalgo@^1.0.4":
+  "integrity" "sha512-rXSP0bf+5n0Qonsb+SVVfNfIsimO4HEtmnIpPHY8Q1UCzKlQrDMfdobr8nJOOsRgWCyMRqeSBQzmWUMq7zvVig=="
+  "resolved" "https://registry.npmjs.org/dezalgo/-/dezalgo-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "asap" "^2.0.0"
+    "wrappy" "1"
+
 "dotenv@^16.0.3":
   "integrity" "sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ=="
   "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
@@ -329,6 +371,13 @@
   "integrity" "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg=="
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
+
+"express-fileupload@^1.4.0":
+  "integrity" "sha512-RjzLCHxkv3umDeZKeFeMg8w7qe0V09w3B7oGZprr/oO2H/ISCgNzuqzn7gV3HRWb37GjRk429CCpSLS2KNTqMQ=="
+  "resolved" "https://registry.npmjs.org/express-fileupload/-/express-fileupload-1.4.0.tgz"
+  "version" "1.4.0"
+  dependencies:
+    "busboy" "^1.6.0"
 
 "express@^4.18.2":
   "integrity" "sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ=="
@@ -435,6 +484,16 @@
     "combined-stream" "^1.0.6"
     "mime-types" "^2.1.12"
 
+"formidable@^2.1.1":
+  "integrity" "sha512-0EcS9wCFEzLvfiks7omJ+SiYJAiD+TzK4Pcw1UlUoGnhUxDcMKjt0P7x8wEb0u6OHu8Nb98WG3nxtlF5C7bvUQ=="
+  "resolved" "https://registry.npmjs.org/formidable/-/formidable-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "dezalgo" "^1.0.4"
+    "hexoid" "^1.0.0"
+    "once" "^1.4.0"
+    "qs" "^6.11.0"
+
 "forwarded@0.2.0":
   "integrity" "sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow=="
   "resolved" "https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz"
@@ -507,6 +566,11 @@
   "version" "1.0.3"
   dependencies:
     "function-bind" "^1.1.1"
+
+"hexoid@^1.0.0":
+  "integrity" "sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g=="
+  "resolved" "https://registry.npmjs.org/hexoid/-/hexoid-1.0.0.tgz"
+  "version" "1.0.0"
 
 "http-errors@2.0.0":
   "integrity" "sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ=="
@@ -713,6 +777,13 @@
   dependencies:
     "ee-first" "1.1.1"
 
+"once@^1.4.0":
+  "integrity" "sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w=="
+  "resolved" "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
+  "version" "1.4.0"
+  dependencies:
+    "wrappy" "1"
+
 "openai@^3.2.1":
   "integrity" "sha512-762C9BNlJPbjjlWZi4WYK9iM2tAVAv0uUp1UmI34vb0CN5T2mjB/qM6RYBmNKMh/dN9fC+bxqPwWJZUTWW052A=="
   "resolved" "https://registry.npmjs.org/openai/-/openai-3.2.1.tgz"
@@ -764,17 +835,17 @@
   "resolved" "https://registry.npmjs.org/punycode/-/punycode-2.3.0.tgz"
   "version" "2.3.0"
 
-"qs@~6.5.2":
-  "integrity" "sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA=="
-  "resolved" "https://registry.npmjs.org/qs/-/qs-6.5.3.tgz"
-  "version" "6.5.3"
-
-"qs@6.11.0":
+"qs@^6.11.0", "qs@6.11.0":
   "integrity" "sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q=="
   "resolved" "https://registry.npmjs.org/qs/-/qs-6.11.0.tgz"
   "version" "6.11.0"
   dependencies:
     "side-channel" "^1.0.4"
+
+"qs@~6.5.2":
+  "integrity" "sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA=="
+  "resolved" "https://registry.npmjs.org/qs/-/qs-6.5.3.tgz"
+  "version" "6.5.3"
 
 "range-parser@~1.2.1":
   "integrity" "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg=="
@@ -914,6 +985,11 @@
   "resolved" "https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz"
   "version" "2.0.1"
 
+"streamsearch@^1.1.0":
+  "integrity" "sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg=="
+  "resolved" "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz"
+  "version" "1.1.0"
+
 "supports-color@^5.5.0":
   "integrity" "sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow=="
   "resolved" "https://registry.npmjs.org/supports-color/-/supports-color-5.5.0.tgz"
@@ -1021,3 +1097,8 @@
     "assert-plus" "^1.0.0"
     "core-util-is" "1.0.2"
     "extsprintf" "^1.2.0"
+
+"wrappy@1":
+  "integrity" "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="
+  "resolved" "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
+  "version" "1.0.2"
