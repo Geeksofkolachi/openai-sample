@@ -14,30 +14,15 @@ const messages: {
 }[] = [
   {
     role: ChatCompletionRequestMessageRoleEnum.System,
-    content: "write blog on these keywords",
-  },
-  {
-    role: ChatCompletionRequestMessageRoleEnum.System,
-    content: "article must contain at least 4 headings",
-  },
-  {
-    role: ChatCompletionRequestMessageRoleEnum.System,
-    content:
-      "write the heading and wrap that with h1 tag and paragraph with p tag",
-  },
-
-  {
-    role: ChatCompletionRequestMessageRoleEnum.System,
-    content:
-      "write the conclusion, Geeks of kolachi is a software companies helping startups to scale their application to the next level",
+    content: "write a summary",
   },
 ];
 
-export const blogGeneration = async (req: Request, res: Response) => {
-  const query = req.body.query;
+export const summaryGeneration = async (req: Request, res: Response) => {
+  const ocrContent = req.body.ocrContent;
   messages.push({
     role: ChatCompletionRequestMessageRoleEnum.User,
-    content: query,
+    content: ocrContent,
   });
   try {
     const completion = await openaiApi.createChatCompletion({
