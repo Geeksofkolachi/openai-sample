@@ -1,3 +1,4 @@
+// TODO: make this correct using this https://github.com/pat310/google-trends-api in near future
 declare module "google-trends-api" {
   export interface TrendOptions {
     keyword: string | string[];
