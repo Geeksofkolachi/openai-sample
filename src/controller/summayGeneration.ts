@@ -26,10 +26,10 @@ export const summaryGeneration = async (req: Request, res: Response) => {
   });
   try {
     const completion = await openaiApi.createChatCompletion({
-      model: "gpt-3.5-turbo-0301",
+      model: process.env.CHAT_GPT_MODEL ?? "gpt-3.5-turbo-0301",
       messages: messages,
       temperature: 0.6,
-      max_tokens: 1000,
+      max_tokens: Number(process.env.CHAT_GPT_MAX_TOKENS) ?? 1000,
     });
     let data = completion.data || "";
     res.status(200).send(data?.choices?.[0]?.message?.content || "");
